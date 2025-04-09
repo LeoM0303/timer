@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wrestling Score Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="root">
+    <!-- timer -->
+    <div id="timerBox">
+      <span id="timer"> 02:00 </span>
+      <button id="restartTimerBtn"> 🔁 </button>
+    </div>
+
+    <div class="table">
+      <div class="table_cell" data-player="1">
+        <button class="scoreBtn redBtn"><span class="score">Score: 0</span></button>
+        <span>Last name</span>
+        <span>School</span>
+        <div class="actions">
+          <button data-points="1"> +1 </button>
+          <button data-points="2"> +2 </button>
+          <button data-points="3"> +3 </button>
+        </div>
+      </div>
+
+      <div class="table_cell" data-player="2">
+        <button class="scoreBtn greenBtn"><span class="score">Score: 0</span></button>
+        <span>Last name</span>
+        <span>School</span>
+        <div class="actions">
+          <button data-points="1"> +1 </button>
+          <button data-points="2"> +2 </button>
+          <button data-points="3"> +3 </button>
+        </div>
+      </div>
+    </div>
+
+    <button id="resetBtn"> New score </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
